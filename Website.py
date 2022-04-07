@@ -1,10 +1,19 @@
 
-def display(name):
-    name += " contributor"
-    return name
+
+class name:
+
+    def __init__(self):
+        self.__name = ""
+
+    def display(self):
+        self.__name += " contributor"
+        return self.__name
+
+    def setName(self, name):
+        self.__name = name
 
 
 if __name__ == "__main__":
-    print("Hello World!!!!")
-    d = display("Ron")
-    print(d)
+    n = name()
+    n.setName("Ron")
+    print(n.display())
